@@ -46,12 +46,46 @@
         <section>
             <h2>Form Section</h2>
 
-            <form id="contact-form">
-                <input type="text" id="name" name="name" placeholder="Name">
-                <input type="email" id="email" name="email" placeholder="Email">
-                <button type="submit">Submit</button>
-            </form>
+            <form id="contact-form" novalidate>
+             <input type="text" id="name" name="name" placeholder="Name">
+    <input type="email" id="email" name="email" placeholder="Email">
+
+    <button type="submit">Submit</button>
+
+    <p id="form-message"></p>
+</form>
         </section>
+        <section>
+    <h2>Click Counter</h2>
+
+    <p>Number of clicks: <span id="count">0</span></p>
+
+    <button id="count-button" type="button">Click Me</button>
+</section>
+
+<section>
+    <h2>Keyboard Events</h2>
+
+    <p>Press any key on your keyboard:</p>
+
+    <p>You pressed: <span id="key-display">Nothing yet</span></p>
+</section>
+
+<section>
+    <h2>Event Delegation</h2>
+
+    <p>Click any item below:</p>
+
+    <ul id="delegation-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+    </ul>
+
+    <p id="selected-item">No item selected yet.</p>
+</section>
+
     </main>
 
     <footer>
