@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy Content</title>
+</head>
+<body>
+
+    <h1>Copy Content Using JavaScript</h1>
+
+    <p id="original-text">
+        I am learning JavaScript DOM manipulation at WE CAN Academy.
+    </p>
+
+    <button id="copy-button">Copy Text</button>
+
+    <h2>Copied Content:</h2>
+
+    <p id="copied-text"></p>
+
+    <script>
+       
+const originalText = document.querySelector("#original-text");
+const copyButton = document.querySelector("#copy-button");
+const copiedText = document.querySelector("#copied-text");
+
+copyButton.addEventListener("click", function () {
+    copiedText.textContent = originalText.textContent;
+});
+
+    </script>
+
+</body>
+</html>

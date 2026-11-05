@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create HTML Element</title>
+</head>
+<body>
+
+    <h1>JavaScript Element Creation</h1>
+
+    <button id="add-button">Add Paragraph</button>
+
+    <div id="content-area"></div>
+
+    <script>
+       
+const addButton = document.querySelector("#add-button");
+const contentArea = document.querySelector("#content-area");
+
+addButton.addEventListener("click", function () {
+    const newParagraph = document.createElement("p");
+
+    newParagraph.textContent = "Hello! I created this paragraph using JavaScript.";
+
+    contentArea.appendChild(newParagraph);
+});
+
+    </script>
+
+</body>
+</html>

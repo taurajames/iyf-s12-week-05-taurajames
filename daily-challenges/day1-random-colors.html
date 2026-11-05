@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Heading Colors</title>
+</head>
+<body>
+
+    <h1 id="color-heading">Welcome to JavaScript!</h1>
+
+    <button id="color-button">Change Heading Color</button>
+
+    <script>
+    const heading = document.querySelector("#color-heading");
+    const button = document.querySelector("#color-button");
+
+    button.addEventListener("click", function () {
+        const randomColor = "#" + Math.floor(Math.random() * 16777215)
+            .toString(16)
+            .padStart(6, "0");
+
+        heading.style.color = randomColor;
+    });
+    </script>
+
+</body>
+</html>

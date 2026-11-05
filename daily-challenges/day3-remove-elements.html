@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove HTML Elements</title>
+</head>
+<body>
+
+    <h1>Remove Images Using JavaScript</h1>
+
+    <div id="image-container">
+        <img src="https://placehold.co/150x100?text=Image+1" alt="First sample image">
+        <img src="https://placehold.co/150x100?text=Image+2" alt="Second sample image">
+        <img src="https://placehold.co/150x100?text=Image+3" alt="Third sample image">
+    </div>
+
+    <button id="remove-button">Remove Images</button>
+
+    <script>
+       
+const removeButton = document.querySelector("#remove-button");
+const imageContainer = document.querySelector("#image-container");
+
+removeButton.addEventListener("click", function () {
+    const images = imageContainer.querySelectorAll("img");
+
+    images.forEach(function (image) {
+        image.remove();
+    });
+});
+
+    </script>
+
+</body>
+</html>
